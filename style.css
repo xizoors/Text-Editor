@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #ffedbc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffde83;
+    padding: 10px;
+    border-radius: 10px;
+}
+.container input{
+    outline: none;
+    border: none;
+    width: 250px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: #ffcd44;
+    color: #fff;
+    padding: 15px 10px;
+    transition: all 0.3s ease;
+}
+.container input:hover{
+    background: #ffbb00;
+}
+.container button{
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    background: #ffcd44;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.container button:hover{
+    background: #ffbb00;
+    letter-spacing: 0.5px;
+}
+input::selection , button::selection{
+    background: #ffde83;
+}
+
+@media (max-width: 400px) {
+    .container{
+        width: 90%;
+    }
+    .container input{
+        width: 200px;
+    }
+    .container button{
+        font-size: 13px;
+        display: flex;
+        width: 200px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 250px) {
+    .container{
+        width: 90%;
+    }
+    .container input{
+        width: 180px;
+    }
+    .container button{
+        font-size: 13px;
+        display: flex;
+        width: 180px;
+        margin: 5px;
+    }
+}
+@media (max-width: 150px) {
+    .container{
+        width: 90%;
+    }
+    .container input{
+        width: 100px;
+    }
+    .container button{
+        font-size: 13px;
+        display: flex;
+        width: 100px;
+        margin: 5px;
+    }
+}
+@media (max-width: 100px) {
+    .container{
+        width: 90%;
+    }
+    .container input{
+        width: 60px;
+    }
+    .container button{
+        font-size: 13px;
+        display: flex;
+        width: 60px;
+        margin: 5px;
+    }
+}
